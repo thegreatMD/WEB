@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/aria": [
+      "default",
+      {
+        "aria-input-field-name": "off",
+        "aria-required-children": "off"
+      }
+    ],
+    "no-inline-styles": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "axe/parsing": "off",
+    "axe/structure": "off",
+    "axe/forms": "off",
+    "meta-viewport": "off",
+    "axe/language": "off",
+    "meta-charset-utf-8": "off"
+  }
+}

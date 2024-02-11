@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Management System Login</title>
+    <style>
+         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url(assets/img/pms3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;   
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            } 
+            body::before {
+            content: "";    
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(51, 111, 214, 0.8));
+        }
+
+        .login-container {
+            max-width: 500px;
+            width: 30%;
+            margin: 55px;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 30px;
+            background-color: rgb(255, 255, 255); /* Add a semi-transparent background to the login container */
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgb(0, 0, 0);
+            position: relative;
+            z-index: 1;
+            margin: 55px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Customize fonts and styles */
+        label, input, select, .btn {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .login-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3    px;
+        }
+
+        .btn {
+            background-color: #55c641;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body> 
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="post">
+            <form method="post" action="backend/login_process.php"></form>
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <!-- <div class="input-group">
+                <label for="user_type">Login as:</label>
+                <select name="user_type" id="user_type">
+                    <option value="admin">Admin</option>
+                    <option value="patient">Patient</option>
+                    <option value="doctor">Doctor</option>
+                </select>
+            </div> -->
+            <div class="input-group">
+                <button type="submit" class="btn" name="login_user">Login</button>
+            </div>
+            <p>Don't have a Username? <a href="Patient_Data_record-Module.html">Register here</a></p>
+
+        </form>
+    </div>
+    <!-- <div class="login-container">
+        <h2>Login</h2>
+        <form method="post" action="login_process.php"> <!-- Update the action attribute -->
+            <!-- Form inputs and buttons as before -->
+        </form>
+    </div> -->
+    
+</body>
+</html>
